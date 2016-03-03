@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Артем Альтигин](https://up.htmlacademy.ru/adaptive/6/user/82397).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Попов](https://htmlacademy.ru/profile/id42761).
 
 ---
 

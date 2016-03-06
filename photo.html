@@ -5,90 +5,117 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="page-header">
+    <div class="wrapper">
+      <header class="header">
 
-      <nav class="menu">
-          <ul class="menu-list">
-            <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+        <button class="header__menu-toogle header__menu-toogle--open header__menu-toogle--close">Смена меню</button>
+
+        <nav class="menu">
+
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link">Главная</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Фото и видео</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Форма отзыва</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Html Academy</a></li>
           </ul>
-          <div class=" menu__toogle--open"></div>
-          <div class="menu__toogle--closed"></div>
-      </nav>
+        </nav>
 
-      <figire class="logo">
-        <a class="logo__link" href="index.html">
-          <img src="http://placehold.it/102x83" alt="логотип" width="102" height="83">
-        </a>
-      </figire>
+        <figure class="logo">
+          <a class="logo__link">
+            <img src="http://placehold.it/102x83" alt="логотип" width="102" height="83">
+          </a>
+        </figure>
+      </header>
 
-      <div class="promo-block">
-        <img class="promo-block__image" src="http://placehold.it/229x39" width="229" height="39" alt="Добро пожаловать в Седону">
+      <div class="promo">
+        <img class="promo__image" src="http://placehold.it/229x39" width="229" height="39" alt="Добро пожаловать в Седону">
       </div>
-    </header>
 
-    <main class="page-main">
       <div class="foto">
-        <div class="foto-presentation">
-          <h1 class="foto-presentation__title">Фото и видео</h1>
-          <p class="foto-presentation__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+
+        <header class="foto__header">
+          <h1 class="foto__title">Фото и видео</h1>
+          <p class="foto__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </header>
+
+        <div class="foto-item">
+          <figure class="foto-item__image">
+            <img src="http://placehold.it/281x282" alt="" width="281" height="282">
+            <figcaption class="foto-item__description">
+              Неродные просторы <span class="foto-item__author">Автор фото:Борис</span>
+            </figcaption>
+          </figure>
+          <a class="foto-item__like" href="#">1350</a>
         </div>
 
         <div class="foto-item">
           <figure class="foto-item__image">
             <img src="http://placehold.it/281x282" alt="" width="281" height="282">
           </figure>
-          <b class="foto-item__title">Неродные просторы</b>
-          <span class="foto-item__author">Автор фото:Борис</span>
-          <a class="btn foto-itrm__btn" href="#"><i></i></a>
-          <b class="foto-item__like">1350</b>
+          <figcaption class="foto-item__description">
+            Местная растительность <span class="foto-item__author">Автор фото:Сергей</span>
+          </figcaption>
+          <a class="foto-item__like" href="#">143</a>
         </div>
 
         <div class="foto-item">
           <figure class="foto-item__image">
             <img src="http://placehold.it/281x282" alt="" width="281" height="282">
           </figure>
-          <b class="foto-item__title">Местная растительность</b>
-          <span class="foto-item__author">Автор фото:Сергей</span>
-          <a class="btn foto-itrm__btn" href="#"><i></i></a>
-          <b class="foto-item__like">143</b>
+          <figcaption class="foto-item__description">
+            Дорога на север <span class="foto-item__author">Автор фото:Петр</span>
+          </figcaption>
+          <a class="foto-item__like" href="#">96</a>
         </div>
 
         <div class="foto-item">
           <figure class="foto-item__image">
             <img src="http://placehold.it/281x282" alt="" width="281" height="282">
           </figure>
-          <b class="foto-item__title">Дорога на север</b>
-          <span class="foto-item__author">Автор фото:Петр</span>
-          <a class="btn foto-itrm__btn" href="#"><i></i></a>
-          <b class="foto-item__like">96</b>
-        </div>
-
-        <div class="foto-item">
-          <figure class="foto-item__image">
-            <img src="http://placehold.it/281x282" alt="" width="281" height="282">
-          </figure>
-          <b class="foto-item__title">Мост дьявола</b>
-          <span class="foto-item__author">Автор фото:Антон</span>
-          <a class="btn foto-itrm__btn" href="#"><i></i></a>
-          <b class="foto-item__like">254</b>
+          <figcaption class="foto-item__description">
+            Мост дьявола <span class="foto-item__author">Автор фото:Антон</span>
+          </figcaption>
+          <a class="btn foto-itrm__btn" href="#">254</a>
         </div>
       </div>
-    </main>
 
-    <footer class="main-footer">
-      <a href="#" class="hastag">#VISITSEDONA</a>
-      <div class="social-block">
-        <a href="#" class="social-block__link"></a>
-        <a href="#" class="social-block__link"></a>
-        <a href="#" class="social-block__link"></a>
+      <div class="player">
+        <header class="player__header">
+          <h2 class="player__title">Все еще сомневаетесь?</h2>
+          <p class="player__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </header>
+
+        <div class="player__browse">
+          <figure class="player__image">
+            <img src="http://placehold.it/320x201" alt="" width="320" height="201">
+          </figure>
+
+          <div class="player-control">
+            <div class="player-control__statusbar">
+              <div class="statusbar__progress"></div>
+            </div>
+          </div>
+
+          <div class="player-controls__buttons">
+            <button class="btn btn--repeat" type="button" name="button"></button>
+            <button class="btn btn--subtitles" type="button" name="button"></button>
+            <button class="btn btn--size" type="button" name="button"></button>
+          </div>
+        </div>
       </div>
-      <address class="author">
-        Разработано
-        <a class="author_link" href="https://htmlacademy.ru"><img class="author_img"></a>
-      </address>
-    </footer>
+
+      <footer class="main-footer">
+        <a href="#" class="footer__hastag">#VISITSEDONA</a>
+        <div class="social-block">
+          <a href="#" class="social-block__link social-block__link--twitter"></a>
+          <a href="#" class="social-block__link social-block__link--facebook"></a>
+          <a href="#" class="social-block__link social-block__link--youtube"></a>
+        </div>
+        <address class="author">
+          Разработано
+          <a class="author__link" href="https://htmlacademy.ru"><img class="author__img" src="" alt=""></a>
+        </address>
+      </footer>
+    </div>
   </body>
 </html>

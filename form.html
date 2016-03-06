@@ -5,116 +5,116 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <div class="wrapper">
 
-    <header class="page-header">
+      <header class="header">
 
-      <nav class="menu">
+        <button class="header__menu-toogle header__menu-toogle--open header__menu-toogle--close">Смена меню</button>
 
-          <ul class="menu-list">
-            <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+        <nav class="menu">
+
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link">Главная</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Фото и видео</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Форма отзыва</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Html Academy</a></li>
           </ul>
-          <div class="menu__toogle menu__toogle--open"></div>
-          <div class="menu__toogle menu__toogle--closed"></div>
-      </nav>
+        </nav>
 
-      <figire class="logo">
-        <a class="logo__link" href="index.html">
-          <img src="http://placehold.it/102x83" alt="логотип" width="102" height="83">
-        </a>
-      </figire>
+        <figure class="logo">
+          <a class="logo__link">
+            <img src="http://placehold.it/102x83" alt="логотип" width="102" height="83">
+          </a>
+        </figure>
+      </header>
 
-      <div class="promo-block">
-        <img class="promo-block__image" src="http://placehold.it/229x39" width="229" height="39" alt="Добро пожаловать в Седону">
+      <div class="promo">
+        <img class="promo__image" src="http://placehold.it/229x39" width="229" height="39" alt="Добро пожаловать в Седону">
       </div>
-    </header>
 
-    <main class="page-main">
       <div class="recall">
 
-        <div class="recall-presentation">
-          <h1 class="recall-presentation__title">Оставьте свой отзыв</h1>
-          <p class="recall-presentation__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        </div>
+        <header class="recall__header">
+          <h1 class="recall__title">Оставьте свой отзыв</h1>
+          <p class="recall__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </header>
 
       <form class="recall-form" action="index.html" method="post">
 
-        <div class="form-initals">
-          <h2 class="form-initials__title"></h2>
+        <div class="recall-form__item">
+          <h2 class="recall-form__title"></h2>
 
-          <label class="form-initials__label" for="name">Имя</label>
-          <input class="form-initials__input" id="name" type="text" name="name" value="Петр">
+          <label class="recall-form__label" for="name">Имя</label>
+          <input class="frecall-form__input" id="name" type="text" name="name" value="Петр">
 
-          <label class="form-initials__label" for="surname">Фамилия</label>
-          <input class="form-initials__input" id="surname" type="text" name="surname" value="Иванов">
+          <label class="recall-form__label" for="surname">Фамилия</label>
+          <input class="recall-form__input" id="surname" type="text" name="surname" value="Иванов">
 
-          <label class="form-initials__label" for="patronymic">Отчество</label>
-          <input class="form-initials__input" id="patronymic" type="text" name="patronymic" value="Александрович">
+          <label class="recall-form__label" for="patronymic">Отчество</label>
+          <input class="recall-form__input" id="patronymic" type="text" name="patronymic" value="Александрович">
         </div>
 
-        <div class="form-contacts">
-          <h2 class="form-contacts__title">Контактная информация:</h2>
+        <div class="recall-form__item">
+          <h2 class="recall-form__title">Контактная информация:</h2>
 
-          <label class="form-contacts__label" for="phone">Имя</label>
-          <input class="form-contacts__input form-contacts--phone" id="phone" type="tel" name="phone" value="Введите телефон">
+          <label class="recall-form__label" for="phone">Имя</label>
+          <input class="recall-form__input recall-form__input--phone" id="phone" type="tel" name="phone" value="Введите телефон">
 
-          <label class="form-contacts__label" for="email">Имя</label>
-          <input class="form-contacts__input form-contacts--email" id="email" type="email" name="email" value="Введите e-mail">
+          <label class="recall-form__label" for="email">Имя</label>
+          <input class="recall-form__input recall-form__input--email" id="email" type="email" name="email" value="Введите e-mail">
         </div>
 
-        <div class="form-impression">
-          <h2 class="form-impression__title">Ваше общее впечатление:</h2>
+        <div class="recall-form__item">
+          <h2 class="recall-form__title">Ваше общее впечатление:</h2>
 
-          <input class="form-impression__input" type="radio" id="good" name="impression" value="good">
-          <label class="form-impression__label" for="good">Скорее положительно</label>
+          <input class="recall-form__input" type="radio" id="good" name="impression" value="good">
+          <label class="recall-form__label" for="good">Скорее положительно</label>
 
-          <input class="form-impression__input" type="radio" id="bad" name="impression" value="bad">
-          <label class="form-impression__label" for="bad">Скорее отрицательно</label>
+          <input class="recall-form__input" type="radio" id="bad" name="impression" value="bad">
+          <label class="recall-form__label" for="bad">Скорее отрицательно</label>
 
-          <input class="form-impression__input" type="radio" id="difficult" name="impression" value="difficult">
-          <label class="form-impression__label" for="difficult">Скорее отрицательно</label>
+          <input class="recall-form__input" type="radio" id="difficult" name="impression" value="difficult">
+          <label class="recall-form__label" for="difficult">Скорее отрицательно</label>
         </div>
 
-        <div class="form-attraction">
-          <h2 class="form-attraction__title">посещенные достопримечательности:</h2>
+        <div class="recall-form__item">
+          <h2 class="recall-form__title">Посещенные достопримечательности:</h2>
 
-          <input class="form-attraction__input" type="checkbox" id="bridge" name="attraction" value="bridge">
-          <label class="form-attraction__label" for="bridge">Мост Дьявола</label>
+          <input class="recall-form__input" type="checkbox" id="bridge" name="attraction" value="bridge">
+          <label class="recall-form__label" for="bridge">Мост Дьявола</label>
 
-          <input class="form-attraction__input" type="checkbox" id="park" name="attraction" value="park">
-          <label class="form-attraction__label" for="park">Слайд-парк</label>
+          <input class="recall-form__input" type="checkbox" id="park" name="attraction" value="park">
+          <label class="recall-form__label" for="park">Слайд-парк</label>
 
-          <input class="form-attraction__input" type="checkbox" id="mountain" name="attraction" value="mountain">
-          <label class="form-attraction__label" for="mountain">Гора-Колокол</label>
+          <input class="recall-form__input" type="checkbox" id="mountain" name="attraction" value="mountain">
+          <label class="recall-form__label" for="mountain">Гора-Колокол</label>
 
-          <input class="form-attraction__input" type="checkbox" id="rock" name="attraction" value="rock">
-          <label class="form-attraction__label" for="rock">Красные скалы</label>
+          <input class="recall-form__input" type="checkbox" id="rock" name="attraction" value="rock">
+          <label class="recall-form__label" for="rock">Красные скалы</label>
         </div>
 
-        <div class="form-emotions">
-          <h2 class="form-emotions__title">Опишите свои эмоции:</h2>
-
-          <textarea class="form-emotions__textarea" name="emotions" rows="8" cols="40">Опишите подробно все свои восторги</textarea>
+        <div class="frecall-form__item">
+          <h2 class="recall-form__title">Опишите свои эмоции:</h2>
+          <textarea class="recall-form__textarea" name="emotions" rows="8" cols="40">Опишите подробно все свои восторги</textarea>
         </div>
 
-        <a href="" class="btn recall__btn">Отправить от</a>
+        <a href="" class="btn btn--recall">Отправить отзыв</a>
       </form>
       </div>
-    </main>
 
-    <footer class="main-footer">
-      <a href="#" class="hastag">#VISITSEDONA</a>
-      <div class="social-block">
-        <a href="#" class="social-block__link"></a>
-        <a href="#" class="social-block__link"></a>
-        <a href="#" class="social-block__link"></a>
-      </div>
-      <address class="author">
-        Разработано
-        <a class="author_link" href="https://htmlacademy.ru"><img class="author_img"></a>
-      </address>
-    </footer>
+
+      <footer class="main-footer">
+        <a href="#" class="footer__hastag">#VISITSEDONA</a>
+        <div class="social-block">
+          <a href="#" class="social-block__link social-block__link--twitter"></a>
+          <a href="#" class="social-block__link social-block__link--facebook"></a>
+          <a href="#" class="social-block__link social-block__link--youtube"></a>
+        </div>
+        <address class="author">
+          Разработано
+          <a class="author__link" href="https://htmlacademy.ru"><img class="author__img" src="" alt=""></a>
+        </address>
+      </footer>
+    </div>
   </body>
 </html>

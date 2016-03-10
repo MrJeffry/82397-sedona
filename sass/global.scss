@@ -1,0 +1,22 @@
+.clearfix {
+
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+
+}
+
+body {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  outline: 1px solid black;
+}

@@ -1,0 +1,14 @@
+.menu {
+  outline: 1px solid red;
+
+  &__list {
+    outline: 1px solid blue;
+    list-style: none;
+  }
+
+  &__item {
+    padding-bottom: 5px;
+    outline: 1px solid orange;
+  }
+
+}

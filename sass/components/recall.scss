@@ -1,0 +1,15 @@
+.recall {
+  outline: 1px solid red;
+
+  &__header {
+    outline: 1px solid blue;
+  }
+
+  &-form {
+    outline: 1px solid orange;
+
+    &__item {
+      outline: 1px solid rgb(78, 48, 201);
+    }
+  }
+}

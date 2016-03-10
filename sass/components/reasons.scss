@@ -1,0 +1,20 @@
+.reasons {
+  outline: 1px solid red;
+
+  &__header {
+    outline: 1px solid blue;
+  }
+
+  &__row {
+    outline: 1px solid blue;
+  }
+
+  .reason-picture {
+    outline: 1px solid red;
+  }
+
+  .reason {
+    outline: 1px solid orange;
+  }
+
+}

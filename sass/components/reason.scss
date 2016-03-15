@@ -1,5 +1,9 @@
-.reason {
+@media (min-width: 768px) {
 
-  outline: 1px solid orange;
-  
+  .reason {
+    float: left;
+    width: 33.333333%;
+    outline: 1px solid orange;
+  }
+
 }

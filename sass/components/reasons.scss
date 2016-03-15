@@ -1,4 +1,5 @@
 .reasons {
+  padding: $mobile-padding;
   outline: 1px solid red;
 
   &__header {
@@ -6,7 +7,24 @@
   }
 
   &__row {
+
     outline: 1px solid blue;
   }
 
+}
+
+@media (min-width: 768px) {
+  .reasons {
+    padding: $tablet-padding;
+    outline: 1px solid red;
+
+    &__header {
+      outline: 1px solid blue;
+    }
+
+    &__row {
+      @include clearfix;
+      outline: 1px solid blue;
+    }
+  }
 }

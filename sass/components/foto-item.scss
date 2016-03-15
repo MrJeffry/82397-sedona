@@ -1,5 +1,38 @@
-&-item {
+@media (min-width: 768px) {
 
-  outline: 1px solid orange;
-  
+  .foto-item {
+    @include clearfix;
+    display: inline-block;
+    vertical-align: top;
+    width: (100%/2);
+    outline: 1px solid red;
+    font-size: 12px;
+
+    &:nth-child(2) {
+      display: inline-block;
+      width: 100%;
+      outline: 1px solid red;
+    }
+
+    &__image {
+      width: 100%;
+
+    }
+
+    &__description {
+      float: left;
+      width: 70%;
+    }
+
+    &__btn {
+      float: right;
+      width: 30%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .foto-item {
+    width: (100%/3);
+  }
 }

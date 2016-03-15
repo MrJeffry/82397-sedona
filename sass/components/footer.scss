@@ -1,5 +1,11 @@
 .main-footer {
+  padding: $mobile-padding;
+}
 
-  outline: 1px solid blue;
-  
+@media (min-width: 768px) {
+  padding: $tablet-padding;
+}
+
+@media (min-width: 1200px) {
+  padding: $desktop-padding;
 }

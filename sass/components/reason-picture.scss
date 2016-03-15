@@ -1,5 +1,9 @@
-.reason-picture {
 
-  outline: 1px solid red;
-  
+@media (min-width: 768px) {
+
+  .reason-picture {
+    float: right;
+    width: 66.666666%;
+  }
+
 }

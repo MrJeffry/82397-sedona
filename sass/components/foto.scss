@@ -1,8 +1,22 @@
 .foto {
+  padding: $mobile-padding;
   outline: 1px solid blue;
 
   &__header {
     outline: 1px solid red;
   }
+}
 
+
+@media (min-width: 768px) {
+  .foto {
+    padding: $tablet-padding;
+    font-size: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .foto {
+    padding: 0;
+  }
 }

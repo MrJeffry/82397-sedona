@@ -1,0 +1,27 @@
+.header {
+  position: relative;
+  margin: 0 auto;
+
+    &__menu-toogle {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+    &--open {
+      position: absolute;
+      top: 10px;
+
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    position: relative;
+    margin: 0 auto;
+
+      &__menu-toogle {
+        display: none;    
+    }
+  }
+}

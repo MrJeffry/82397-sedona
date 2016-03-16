@@ -1,22 +1,21 @@
-.clearfix {
-
-  &::before,
-  &::after {
-    content: "";
-    display: table;
-  }
-
-  &::after {
-    clear: both;
-  }
-
-}
-
 body {
-  max-width: 320px;
-  margin: 0 auto;
+  min-width: 320px;
 }
 
 .wrapper {
-  outline: 1px solid black;
+
+  @media (max-width: 767px) {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }

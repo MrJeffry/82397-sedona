@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -46,11 +47,13 @@
             <div class="reason__number">&mdash; №1 &mdash;</div>
             <p class="reason__text">Седона не атракцион для туристов, там течет своя жизнь</p>
           </div>
+
+          <figure class="reason-picture">
+            <img class="reason-picture__img" src="http://placehold.it/320x260" alt="" width="320" height="260">
+          </figure>
         </div>
 
-        <figure class="reason-picture">
-          <img class="reason-picture__img" src="http://placehold.it/320x260" alt="" width="320" height="260">
-        </figure>
+
 
         <div class="reasons__row">
           <div class="reason reason--icon reason--icon-home">
@@ -75,11 +78,11 @@
             <div class="reason__number">&mdash; №2 &mdash;</div>
             <p class="reason__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
-        </div>
 
-        <figure class="reason-picture">
-          <img class="reason-picture__img" src="http://placehold.it/320x260" alt="" width="320" height="260">
-        </figure>
+          <figure class="reason-picture">
+            <img class="reason-picture__img" src="http://placehold.it/320x260" alt="" width="320" height="260">
+          </figure>
+        </div>
 
         <div class="reasons__row">
           <div class="reason reason--gray">
@@ -100,28 +103,27 @@
             <p class="reason__text">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </section>
+
+        <div class="search">
+          <h2 class="search__title">Заинтересовались?</h2>
+          <p class="search__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <a href="" class="btn btn--search">Найти гостиницу</a>
         </div>
 
-      <div class="search">
-        <h2 class="search__title">Заинтересовались?</h2>
-        <p class="search__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a href="" class="btn btn--search">Найти гостиницу</a>
-      </div>
+        <div class="map-canvas" id="map-canvas"></div>
 
-      <div class="map-canvas" id="map-canvas"></div>
-
-      <footer class="main-footer">
-        <a href="#" class="footer__hastag">#VISITSEDONA</a>
-        <div class="social-block">
-          <a href="#" class="social-block__link social-block__link--twitter"></a>
-          <a href="#" class="social-block__link social-block__link--facebook"></a>
-          <a href="#" class="social-block__link social-block__link--youtube"></a>
-        </div>
-        <address class="author">
-          Разработано
-          <a class="author__link" href="https://htmlacademy.ru"><img class="author__img" src="" alt=""></a>
-        </address>
-      </footer>
+        <footer class="main-footer">
+          <a href="#" class="footer__hastag">#VISITSEDONA</a>
+          <div class="social-block">
+            <a href="#" class="social-block__link social-block__link--twitter">Т</a>
+            <a href="#" class="social-block__link social-block__link--facebook">Ф</a>
+            <a href="#" class="social-block__link social-block__link--youtube">Ю</a>
+          </div>
+          <address class="author">
+            Разработано
+            <a class="author__link" href="https://htmlacademy.ru"><img class="author__img" src="" alt=""></a>
+          </address>
+        </footer>
     </div>
   </body>
 </html>

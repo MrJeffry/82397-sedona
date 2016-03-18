@@ -1,8 +1,12 @@
 @import "normalize.scss";
 
-@import "global.scss";
-@import "mixins.scss";
+
+@import "fonts.scss";
 @import "variables.scss";
+@import "mixins.scss";
+@import "global.scss";
+
+
 
 @import "components/header.scss";
 @import "components/menu.scss";

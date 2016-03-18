@@ -1,15 +1,17 @@
 .foto {
   padding: $mobile-padding;
-  outline: 1px solid blue;
 
   &__header {
-    outline: 1px solid red;
+
   }
 }
 
 
 @media (min-width: 768px) {
   .foto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: $tablet-padding;
     font-size: 0;
   }

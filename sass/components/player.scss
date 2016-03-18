@@ -1,11 +1,11 @@
 .player {
-  outline: 1px solid red;
+  display: flex;
 
   &__progress {
-    outline: 1px solid blue;
+
   }
 
   &__buttons {
-    outline: 1px solid orange;
+
   }
 }

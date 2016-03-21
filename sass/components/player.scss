@@ -1,11 +1,25 @@
 .player {
   display: flex;
+  justify-content: space-around;
+  &__wrapper {
+
+  }
 
   &__progress {
 
+    background-color: orange;
+    width: 200px;
+    height: 30px;
   }
 
   &__buttons {
 
+    img {
+      display: block;
+    }
+  }
+
+  &__repeat {
+    order: -1;
   }
 }

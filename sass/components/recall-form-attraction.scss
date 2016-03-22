@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+
+  .recall-form-attraction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+    &__wrapper {
+      width:50%;
+      &:nth-child(1) { order: 0; }
+      &:nth-child(2) { order: 1; }
+      &:nth-child(4) { order: 2; }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .recall-form-attraction {
+    &__wrapper {
+      width:25%;
+    }
+  }
+}

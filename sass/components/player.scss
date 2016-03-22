@@ -1,25 +1,20 @@
-.player {
-  display: flex;
-  justify-content: space-around;
-  &__wrapper {
+@media (min-width: 768px) {
+  .player {
+    display: flex;
+    justify-content: space-around;
 
-  }
-
-  &__progress {
-
-    background-color: orange;
-    width: 200px;
-    height: 30px;
-  }
-
-  &__buttons {
-
-    img {
-      display: block;
+    &__progress {
+      width: 20%;
+      flex-grow: 1;
+      background-color: orange;
+      height: 30px;
     }
-  }
 
-  &__repeat {
-    order: -1;
+    &__buttons {
+
+      img {
+        display: block;
+      }
+    }
   }
 }

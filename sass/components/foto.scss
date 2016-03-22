@@ -9,11 +9,13 @@
 
 @media (min-width: 768px) {
   .foto {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     padding: $tablet-padding;
-    font-size: 0;
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 }
 

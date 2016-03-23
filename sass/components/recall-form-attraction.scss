@@ -8,6 +8,8 @@
 
 
     &__wrapper {
+      box-sizing: border-box;
+      padding-left: 17%;
       width:50%;
       &:nth-child(1) { order: 0; }
       &:nth-child(2) { order: 1; }
@@ -19,7 +21,9 @@
 @media (min-width: 1200px) {
   .recall-form-attraction {
     &__wrapper {
+      box-sizing: border-box;
       width:25%;
+      padding-left: 10%;
     }
   }
 }

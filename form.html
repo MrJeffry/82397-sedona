@@ -35,99 +35,99 @@
       </div>
 
       <section class="recall">
-
         <header class="recall__header">
           <h1 class="recall__title">Оставьте свой отзыв</h1>
           <p class="recall__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
 
-        <form class="recall-form" action="index.html" method="post">
+        <form action="index.html" method="post">
+          <div class="recall-form">
+            <div class="recall-form__item">
+              <h2 class="recall-form__title">Представьтесь, пожалуйста:</h2>
 
-          <div class="recall-form__item">
-            <h2 class="recall-form__title">Представьтесь, пожалуйста:</h2>
-
-            <div class="recall-form__wrapper">
-              <label class="recall-form__label" for="name">Имя</label>
-              <input class="recall-form__input recall-form__input--name" id="name" type="text" name="name" value="Петр">
-            </div>
-
-            <div class="recall-form__wrapper">
-              <label class="recall-form__label" for="surname">Фамилия</label>
-              <input class="recall-form__input recall-form__input--surname" id="surname" type="text" name="surname" value="Иванов">
-            </div>
-
-            <div class="recall-form__wrapper">
-              <label class="recall-form__label" for="patronymic">Отчество</label>
-              <input class="recall-form__input recall-form__input--patronymic" id="patronymic" type="text" name="patronymic" value="Александрович">
-            </div>
-
-          </div>
-
-          <div class="recall-form__item">
-            <h2 class="recall-form__title">Контактная информация:</h2>
-
-            <div class="recall-form__wrapper">
-              <label class="recall-form__label" for="phone">Телефон</label>
-              <input class="recall-form__input recall-form__input--phone" id="phone" type="tel" name="phone" value="Введите телефон">
-            </div>
-
-            <div class="recall-form__wrapper">
-              <label class="recall-form__label" for="email">Электронная почта</label>
-              <input class="recall-form__input recall-form__input--email" id="email" type="email" name="email" value="Введите e-mail">
-            </div>
-          </div>
-
-          <div class="recall-form__item">
-            <h2 class="recall-form__title">Ваше общее впечатление:</h2>
-            <div class="recall-form__wrapper">
-              <input class="recall-form__input" type="radio" id="good" name="impression" value="good">
-              <label class="recall-form__label" for="good">Скорее положительно</label>
-            </div>
-
-            <div class="recall-form__wrapper">
-              <input class="recall-form__input" type="radio" id="bad" name="impression" value="bad">
-              <label class="recall-form__label" for="bad">Скорее отрицательно</label>
-            </div>
-
-            <div class="recall-form__wrapper">
-              <input class="recall-form__input" type="radio" id="difficult" name="impression" value="difficult">
-              <label class="recall-form__label" for="difficult">Скорее отрицательно</label>
-            </div>
-          </div>
-
-          <div class="recall-form__item">
-            <h2 class="recall-form__title">Посещенные достопримечательности:</h2>
-            <div class="recall-form-attraction">
-              
-              <div class="recall-form-attraction__wrapper">
-                <input class="recall-form__input" type="checkbox" id="bridge" name="attraction" value="bridge">
-                <label class="recall-form__label" for="bridge">Мост Дьявола</label>
+              <div class="recall-form__wrapper">
+                <label class="recall-form__label" for="name">Имя</label>
+                <input class="recall-form__input recall-form__input--name" id="name" type="text" name="name" value="Петр">
               </div>
 
-              <div class="recall-form-attraction__wrapper">
-                <input class="recall-form__input" type="checkbox" id="park" name="attraction" value="park">
-                <label class="recall-form__label" for="park">Слайд-парк</label>
+              <div class="recall-form__wrapper">
+                <label class="recall-form__label" for="surname">Фамилия</label>
+                <input class="recall-form__input recall-form__input--surname" id="surname" type="text" name="surname" value="Иванов">
               </div>
 
-              <div class="recall-form-attraction__wrapper">
-                <input class="recall-form__input" type="checkbox" id="mountain" name="attraction" value="mountain">
-                <label class="recall-form__label" for="mountain">Гора-Колокол</label>
-
+              <div class="recall-form__wrapper">
+                <label class="recall-form__label" for="patronymic">Отчество</label>
+                <input class="recall-form__input recall-form__input--patronymic" id="patronymic" type="text" name="patronymic" value="Александрович">
               </div>
 
-              <div class="recall-form-attraction__wrapper">
-                <input class="recall-form__input" type="checkbox" id="rock" name="attraction" value="rock">
-                <label class="recall-form__label" for="rock">Красные скалы</label>
+            </div>
+
+            <div class="recall-form__item">
+              <h2 class="recall-form__title">Контактная информация:</h2>
+
+              <div class="recall-form__wrapper">
+                <label class="recall-form__label" for="phone">Телефон</label>
+                <input class="recall-form__input recall-form__input--phone" id="phone" type="tel" name="phone" value="Введите телефон">
+              </div>
+
+              <div class="recall-form__wrapper">
+                <label class="recall-form__label" for="email">Электронная почта</label>
+                <input class="recall-form__input recall-form__input--email" id="email" type="email" name="email" value="Введите e-mail">
               </div>
             </div>
 
-          </div>
-          <div class="recall-form__item">
-            <h2 class="recall-form__title">Опишите свои эмоции:</h2>
-            <textarea class="recall-form__textarea" name="emotions" rows="8" cols="40">Опишите подробно все свои восторги</textarea>
+            <div class="recall-form__item">
+              <h2 class="recall-form__title">Ваше общее впечатление:</h2>
+              <div class="recall-form__wrapper">
+                <input class="recall-form__input" type="radio" id="good" name="impression" value="good">
+                <label class="recall-form__label" for="good">Скорее положительно</label>
+              </div>
+
+              <div class="recall-form__wrapper">
+                <input class="recall-form__input" type="radio" id="bad" name="impression" value="bad">
+                <label class="recall-form__label" for="bad">Скорее отрицательно</label>
+              </div>
+
+              <div class="recall-form__wrapper">
+                <input class="recall-form__input" type="radio" id="difficult" name="impression" value="difficult">
+                <label class="recall-form__label" for="difficult">Скорее отрицательно</label>
+              </div>
+            </div>
+
+            <div class="recall-form__item">
+              <h2 class="recall-form__title">Посещенные достопримечательности:</h2>
+              <div class="recall-form-attraction">
+
+                <div class="recall-form-attraction__wrapper">
+                  <input class="recall-form__input" type="checkbox" id="bridge" name="attraction" value="bridge">
+                  <label class="recall-form__label" for="bridge">Мост Дьявола</label>
+                </div>
+
+                <div class="recall-form-attraction__wrapper">
+                  <input class="recall-form__input" type="checkbox" id="park" name="attraction" value="park">
+                  <label class="recall-form__label" for="park">Слайд-парк</label>
+                </div>
+
+                <div class="recall-form-attraction__wrapper">
+                  <input class="recall-form__input" type="checkbox" id="mountain" name="attraction" value="mountain">
+                  <label class="recall-form__label" for="mountain">Гора-Колокол</label>
+
+                </div>
+
+                <div class="recall-form-attraction__wrapper">
+                  <input class="recall-form__input" type="checkbox" id="rock" name="attraction" value="rock">
+                  <label class="recall-form__label" for="rock">Красные скалы</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="recall-form__item">
+              <h2 class="recall-form__title">Опишите свои эмоции:</h2>
+              <textarea class="recall-form__textarea" name="emotions" rows="8" cols="40">Опишите подробно все свои восторги</textarea>
+            </div>
           </div>
 
-          <a href="" class="btn btn--recall">Отправить отзыв</a>
+          <button type="submit" href="" class="btn btn--recall">Отправить отзыв</a>
         </form>
       </section>
 

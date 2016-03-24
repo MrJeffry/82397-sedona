@@ -2,18 +2,21 @@
   position: relative;
   margin: 0 auto;
 
+
     &__menu-toogle {
+      background-image: url("../../img/icon-cross.svg");
+      background-repeat: no-repeat;
       position: absolute;
-      top: 0;
-      right: 0;
-
-    &--open {
-      position: absolute;
-      top: 10px;
-
+      top: 17px;
+      right: 20px;
+      width: 26px;
+      height: 26px;
+      border: none;
+      background-color: transparent;
+      outline: none;
     }
   }
-}
+
 
 @media (min-width: 768px) {
   .header {
@@ -21,7 +24,7 @@
     margin: 0 auto;
 
       &__menu-toogle {
-        display: none;    
+        display: none;
     }
   }
 }

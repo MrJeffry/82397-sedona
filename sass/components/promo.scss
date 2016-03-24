@@ -1,17 +1,21 @@
 .promo {
-  top: -30px;
+  position: relative;
   background-image: url("../../img/bg-back-mobile.jpg");
   background-position: center;
   background-repeat: no-repeat;
   min-height: 360px;
   text-align: center;
-  z-index: -1;
 
 
   &__image {
     display: block;
     margin: 0 auto;
     padding-top: 60px;
+  }
+
+  &:after {
+    position: absolute;
+    
   }
 
 }

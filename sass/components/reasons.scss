@@ -1,14 +1,36 @@
 .reasons {
   padding: $mobile-padding;
-  outline: 1px solid red;
+  text-align: center;
 
   &__header {
-    outline: 1px solid blue;
+    width: 100%;
+  }
+
+  &__title {
+    width: 98%;
+    margin: 0;
+    padding-bottom: 40px;
+    font-family: $ptsans;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    width: 100%;
+    margin: 0;
+    font-family: $ptsans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #333;
+    text-transform: uppercase;
   }
 
   &__row {
 
-    outline: 1px solid blue;
+
   }
 
 }

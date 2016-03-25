@@ -1,7 +1,10 @@
 .logo {
-  display: block;
-  outline: 1px solid red;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
+  z-index: 1;
 
   &__link {
     margin: 0 auto;
@@ -10,8 +13,6 @@
 
 @media (min-width: 768px) {
   .logo {
-    position: absolute;
     top: 0;
-    left: 46%;
   }
 }

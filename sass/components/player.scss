@@ -1,11 +1,20 @@
-.player {
-  outline: 1px solid red;
+@media (min-width: 768px) {
+  .player {
+    display: flex;
+    justify-content: space-around;
 
-  &__progress {
-    outline: 1px solid blue;
-  }
+    &__progress {
+      width: 20%;
+      flex-grow: 1;
+      background-color: orange;
+      height: 30px;
+    }
 
-  &__buttons {
-    outline: 1px solid orange;
+    &__buttons {
+
+      img {
+        display: block;
+      }
+    }
   }
 }

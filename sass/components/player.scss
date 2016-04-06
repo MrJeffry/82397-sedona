@@ -1,7 +1,7 @@
 .player {
   position: relative;
   padding: $mobile-padding;
-  background-image: url(../../img/video-mobile.jpg);
+  background-image: url("../img/video-mobile.jpg");
   background-repeat: no-repeat;
   height: 201px;
 
@@ -80,7 +80,7 @@
 @media  (min-resolution: 144dpi),
         (min-resolution: 1.5dppx) {
   .player {
-    background-image: url("../../img/video-mobile@2x.jpg");
+    background-image: url("../img/video-mobile@2x.jpg");
     background-size: cover;
   }
 }
@@ -91,7 +91,7 @@
     padding: 0;
     margin: 0 auto;
     height: 500px;
-    background-image: url(../../img/video-tablet.jpg);
+    background-image: url("../img/video-tablet.jpg");
 
     &__wrapper {
       box-sizing: border-box;
@@ -129,14 +129,13 @@
       display: block;
       position: static;
     }
-
   }
 }
 
 @media  (min-resolution: 144dpi),
         (min-resolution: 1.5dppx) {
   .player {
-    background-image: url("../../img/video-tablet@2x.jpg");
+    background-image: url("../img/video-tablet@2x.jpg");
     background-size: cover;
   }
 }
@@ -147,14 +146,14 @@
     width: 800px;
     margin: 0 auto;
     height: 500px;
-    background-image: url(../../img/video-desktop.jpg);
+    background-image: url(../img/video-desktop.jpg);
   }
 }
 
 @media  (min-resolution: 144dpi),
         (min-resolution: 1.5dppx) {
   .player {
-    background-image: url("../../img/video-desktop@2x.jpg");
+    background-image: url("../img/video-desktop@2x.jpg");
     background-size: cover;
   }
 }

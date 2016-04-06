@@ -16,7 +16,6 @@
   }
 }
 
-
 @media (min-width: 768px) {
   .foto {
     padding: $tablet-padding;
@@ -25,6 +24,10 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+    }
+
+    &__item {
+      width: 70%;
     }
   }
 }

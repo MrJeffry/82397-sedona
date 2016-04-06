@@ -1,6 +1,6 @@
 .promo {
   position: relative;
-  background-image: url("../../img/bg-back-mobile.jpg");
+  background-image: url("../img/bg-back-mobile.jpg");
   background-position: center;
   background-repeat: no-repeat;
   min-height: 390px;
@@ -33,7 +33,7 @@
 @media  (min-resolution: 144dpi),
         (min-resolution: 1.5dppx) {
   .promo {
-    background-image: url("../../img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/bg-back-mobile@2x.jpg");
     background-position: 50% 25%;
   }
 }
@@ -41,13 +41,13 @@
 @media (min-width: 768px) {
   .promo {
     min-height: 519px;
-    background-image: url("../../img/bg-back-desktop.jpg");
+    background-image: url("../img/bg-back-desktop.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-position: 50% 25%;
 
     &:after {
-      background-image: url(../../img/bg-intro-triangle-tablet.svg);
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
       background-repeat: no-repeat;
       background-size: 768px 57px;
       width: 768px;
@@ -63,7 +63,7 @@
   @media  (min-resolution: 144dpi),
           (min-resolution: 1.5dppx) {
     .promo {
-      background-image: url("../../img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/bg-back-desktop@2x.jpg");
       background-position: 50% 25%;
     }
   }
@@ -73,7 +73,7 @@
   .promo {
 
     &:after {
-      background-image: url(../../img/bg-intro-triangle-desktop.svg);
+      background-image: url(../img/bg-intro-triangle-desktop.svg);
       background-repeat: no-repeat;
       background-size: 1200px 57px;
       width: 1200px;

@@ -1,5 +1,46 @@
 .social-block {
+  font-size: 0;
 
-  outline: 1px solid red;
-  
+  &__link {
+    display: inline-block;
+    margin-right: 6px;
+    text-decoration: none;
+    vertical-align: top;
+    background-color: #81b3d2;
+    cursor: pointer;
+    text-align: center;
+
+    &--twitter {
+      padding: 17px 15px 16px 14px;
+    }
+
+    &--facebook {
+      padding: 12px 19px 16px 18px;
+    }
+
+    &--youtube {
+      padding: 17px 13px 17px 13px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__image {
+    fill: #fff;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .social-block {
+    float: left;
+    padding-left: 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social-block {
+    padding-left: 300px;
+  }
 }

@@ -1,10 +1,17 @@
+.recall-form-attraction {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+}
+
 @media (min-width: 768px) {
 
   .recall-form-attraction {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
 
     &__wrapper {

@@ -1,9 +1,27 @@
-.main-footer {
+.footer {
   padding: $mobile-padding;
+  text-align: center;
+
+  &__hastag {
+    display: block;
+    font-family: $ptsans;
+    font-size: 21px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
 }
 
 @media (min-width: 768px) {
-  padding: $tablet-padding;
+  .footer {
+    @include clearfix;
+    text-align: center;
+
+    &__hastag {
+      float: left;
+    }
+  }
 }
 
 @media (min-width: 1200px) {

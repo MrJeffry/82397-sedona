@@ -1,17 +1,63 @@
+.foto-item {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+
+  &__name {
+    display: block;
+    font-family: $ptsans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+
+  }
+
+  &__author {
+    display: block;
+    font-family: $ptsans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+
+  &__like {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 14px;
+
+    svg {
+      padding-right: 20px;
+      fill: #b2b2b2;
+    }
+  }
+}
+
 @media (min-width: 768px) {
 
   .foto-item {
     width: (100%/2);
     font-size: 12px;
+    border: none;
+    padding: 0;
 
     &:first-child{
       width: 100%;
     }
 
+    picture {
+      img {
+        display: block;
+      }
+    }
+
     &__wrapper {
       display: flex;
+      padding: 10px 20px;
       align-items: center;
       justify-content: space-between;
+      background-color: #f2f2f2;
     }
 
     &__image {
@@ -19,7 +65,11 @@
     }
 
     &__description {
+      width: 70%;
+    }
 
+    &__name {
+      width: 100%;
     }
 
     &__author {
@@ -28,13 +78,33 @@
 
     &__like {
 
-
     }
   }
 }
 
 @media (min-width: 1200px) {
   .foto-item {
+    position: relative;
     width: (100%/3);
+
+    &__wrapper {
+      box-sizing: border-box;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    &__like {
+      color: #fff;
+      svg {
+        padding-right: 20px;
+        fill: #fff;
+      }
+    }
+
   }
+
+
 }

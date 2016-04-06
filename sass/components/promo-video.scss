@@ -1,7 +1,52 @@
 .promo-video {
-  outline: 1px solid blue;
+  text-align: center;
+  padding-bottom: 100px;
 
   &__header {
-    outline: 1px solid red;
+
+  }
+
+  &__title {
+    font-family: $ptsans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0 auto;
+    width: 80%;
+    font-family: $ptsans;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 768px) {
+  .promo-video {
+    padding: $tablet-padding;
+    padding-bottom: 50px;
+
+    &__header {
+      padding-bottom: 75px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .promo-video {
+    padding: $desktop-padding;
+    padding-bottom: 50px;
+
+    &__header {
+      padding-bottom: 75px;
+    }
+
+    &__text {
+      width: 45%;
+    }
   }
 }

@@ -1,12 +1,109 @@
 .reason {
 
   &--icon {
+    position: relative;
     text-align: left;
-    padding-left: 48px;
+    padding: 35px 0 0px 69px;
   }
 
   &--blue {
+    width: 100%;
+    padding-top: 48px;
+    padding-bottom: 40px;
+    font-family: $ptsans;
     background-color: #81b3d2;
+    color: #fff;
+  }
+
+
+  &__title {
+    padding-bottom: 17px;
+    margin: 0;
+    font-family: $ptsans;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 10px;
+    text-transform: uppercase;
+  }
+
+  &__number {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+  }
+
+  &__text {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 15px;
+    font-family: $ptsans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+
+  &--icon-home {
+
+    &:before {
+      position: absolute;
+      content: "";
+      top: 25px;
+      left: 20px;
+      width: 39px;
+      height: 37px;
+      background-image: url(../../img/icon-house.svg);
+      background-size: 39px 37px;
+    }
+  }
+
+  &--icon-gift {
+
+    &:before {
+      position: absolute;
+      content: "";
+      top: 23px;
+      left: 20px;
+      width: 39px;
+      height: 37px;
+      background-image: url(../../img/icon-gift.svg);
+      background-size: 39px 37px;
+    }
+  }
+
+  &--icon-hamburger {
+
+    &:before {
+      position: absolute;
+      content: "";
+      top: 24px;
+      left: 18px;
+      width: 39px;
+      height: 37px;
+      background-image: url(../../img/icon-burger.svg);
+      background-size: 39px 37px;
+    }
+  }
+
+  &--gray {
+    position: relative;
+    padding: $mobile-padding;
+    padding-top: 35px;
+    padding-bottom: 28px;
+    background-color: #eee;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 20px;
+      right: 20px;
+      border-bottom: 1px solid #d6d6d6;
+    }
+
+    // .reason__title {
+    //   padding-top: 10px;
+    // }
   }
 }
 
@@ -15,7 +112,80 @@
   .reason {
     float: left;
     width: 33.333333%;
-    outline: 1px solid orange;
+    padding: 0;
+    min-height: 260px;
+
+    &--icon {
+      text-align: center;
+      padding: 0;
+      min-height: 256px;
+      padding-bottom: 74px;
+    }
+
+    &__title {
+      padding-top: 48px;
+    }
+
+    &--icon-home {
+
+      &:before {
+        position: absolute;
+        content: "";
+        top: 16%;
+        left: 50%;
+        width: 75px;
+        height: 72px;
+        background-image: url(../../img/icon-house.svg);
+        background-repeat: no-repeat;
+        background-size: 75px 72px;
+        transform: translateX(-50%);
+      }
+    }
+
+    &--icon-gift {
+
+      &:before {
+        position: absolute;
+        content: "";
+        top: 16%;
+        left: 50%;
+        width: 75px;
+        height: 72px;
+        background-image: url(../../img/icon-gift.svg);
+        background-repeat: no-repeat;
+        background-size: 75px 72px;
+        transform: translateX(-50%);
+      }
+    }
+
+    &--icon-hamburger {
+
+      &:before {
+        position: absolute;
+        content: "";
+        top: 16%;
+        left: 50%;
+        width: 75px;
+        height: 72px;
+        background-image: url(../../img/icon-burger.svg);
+        background-repeat: no-repeat;
+        background-size: 75px 72px;
+        transform: translateX(-50%);
+      }
+    }
+
+    &__text {
+
+    }
+
+    &--blue {
+
+    }
+
+    &--gray {
+      padding: 0;
+
+    }
   }
 
 }

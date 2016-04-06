@@ -2,7 +2,17 @@
   padding: $mobile-padding;
 
   &__header {
+    text-align: center;
+  }
 
+  &__title {
+    @include mobile-title;
+  }
+
+  &__text {
+    width: 97%;
+    margin: 0 auto;
+    @include mobile-text;
   }
 }
 

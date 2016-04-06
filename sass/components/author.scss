@@ -1,3 +1,12 @@
 .author {
-    
+  font-family: $ptsans;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+
+  .author {
+    float: right;
+  }
 }

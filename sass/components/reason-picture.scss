@@ -1,9 +1,36 @@
+.reason-picture {
+  position: relative;
+  width: 320px;
+  height: 260px;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    display: block;
+    bottom: -13%;
+    left: -105%;
+  }
+
+}
 
 @media (min-width: 768px) {
 
   .reason-picture {
     float: right;
     width: 66.666666%;
-  }
 
+    img {
+      bottom: -30%;
+      left: -30%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .reason-picture {
+    img {
+      top: 0;
+      left: 0;
+    }
+  }
 }

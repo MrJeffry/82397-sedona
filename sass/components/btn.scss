@@ -1,8 +1,16 @@
 .btn {
+  display: inline-block;
   text-decoration: none;
-  color: black;
+
+
 
   &--recall {
     display: inline-block;
+  }
+
+  &--search {
+    padding: 20px 58px;
+    background-color: #81b3d2;
+    text-transform: uppercase;
   }
 }

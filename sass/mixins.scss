@@ -8,3 +8,24 @@
     clear: both;
   }
 }
+
+@mixin mobile-title() {
+  font-family: $ptsans;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 26px;
+  color: black;
+}
+
+@mixin tablet-title() {
+
+}
+
+@mixin mobile-text() {
+  font-family: $ptsans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}

@@ -1,3 +1,40 @@
 .search {
-  outline: 1px solid red;
+  min-height: 288px;
+  padding: $mobile-padding;
+  text-align: center;
+
+  &__title {
+    margin: 0;
+    padding-top: 32px;
+    font-family: &ptsans;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    font-family: &ptsans;
+    font-size: 13px;
+    font-weight: lighter;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 768px) {
+  .search {
+    &__title {
+      padding-top: 50px;
+      font-size: 30px;
+    }
+
+    &__text {
+      width: 40%;
+      margin: 0 auto;
+    }
+  }
 }

@@ -63,18 +63,88 @@
 
     &__title {
       width: 69%;
+      padding-top: 49px;
+      font-size: 21px;
     }
 
     &__text {
       width: 100%;
+      padding-bottom: 50px;
     }
 
     &__row {
+
+      &--icon {
+        padding-bottom: 0;
+      }
       @include clearfix;
         &--invert {
 
-          .reason--blue {
-            float: right;
+          .reason {
+            &--blue {
+              float: right;
+
+              .reason__title {
+                width: 59%;
+                padding-top: 43px;
+                padding-bottom: 16px;
+              }
+
+              .reason__text {
+                width: 65%;
+                padding-top: 18px;
+              }
+            }
+          }
+
+          .reason-picture {
+            float: left;
+          }
+        }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .reasons {
+
+    &__header {
+
+    }
+
+    &__title {
+      width: 50%;
+      padding-top: 49px;
+      font-size: 21px;
+    }
+
+    &__text {
+      width: 100%;
+      padding-bottom: 50px;
+    }
+
+    &__row {
+
+      &--icon {
+        padding-bottom: 0;
+      }
+      @include clearfix;
+        &--invert {
+
+          .reason {
+            &--blue {
+              float: right;
+
+              .reason__title {
+                width: 151px;
+                padding-top: 50px;
+              }
+
+              .reason__text {
+                width: 65%;
+                padding-top: 18px;
+              }
+            }
           }
 
           .reason-picture {

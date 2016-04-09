@@ -1,7 +1,12 @@
 .foto-item {
-  padding-top: 30px;
+
+  padding-top: 23px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+
+  &__wrapper {
+    padding: 10px 10px;
+  }
 
   &__name {
     display: block;
@@ -10,11 +15,12 @@
     font-weight: 700;
     line-height: 21px;
     text-transform: uppercase;
-
   }
+
 
   &__author {
     display: block;
+    padding-top: 3px;
     font-family: $ptsans;
     font-size: 14px;
     font-weight: 400;
@@ -28,9 +34,13 @@
     font-size: 14px;
 
     svg {
-      padding-right: 20px;
+      padding-right: 15px;
       fill: #b2b2b2;
     }
+  }
+
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
   }
 }
 
@@ -54,7 +64,7 @@
 
     &__wrapper {
       display: flex;
-      padding: 10px 20px;
+      padding: 17px 30px;
       align-items: center;
       justify-content: space-between;
       background-color: #f2f2f2;

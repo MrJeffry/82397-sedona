@@ -1,7 +1,12 @@
 .foto {
   padding: $mobile-padding;
 
+  &__wrapper {
+    padding-top: 34px;
+  }
+
   &__header {
+    padding-top: 26px;
     text-align: center;
   }
 
@@ -12,6 +17,7 @@
   &__text {
     width: 97%;
     margin: 0 auto;
+    padding-top: 16px;
     @include mobile-text;
   }
 }
@@ -26,6 +32,20 @@
       justify-content: space-between;
     }
 
+    &__header {
+      padding-top: 54px;
+      padding-bottom: 36px;
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__text {
+      width: 69%;
+    }
+
     &__item {
       width: 70%;
     }
@@ -35,5 +55,13 @@
 @media (min-width: 1200px) {
   .foto {
     padding: 0;
+
+    &__header {
+      padding-top: 91px;
+    }
+
+    &__text {
+      width: 37%;
+    }
   }
 }

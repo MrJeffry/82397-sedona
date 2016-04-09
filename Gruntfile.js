@@ -110,6 +110,14 @@ module.exports = function (grunt) {
       }
     },
 
+    uglify: {
+    my_target: {
+      files: {
+        'build/js/script.min.js': ['build/js/script.js']
+      }
+    }
+  },
+
     watch: {
       html: {
         files: ["*.html"],
@@ -137,6 +145,7 @@ module.exports = function (grunt) {
     "postcss",
     "symbols",
     "imagemin",
-    'cssmin'
+    'cssmin',
+    'uglify'
   ]);
 };

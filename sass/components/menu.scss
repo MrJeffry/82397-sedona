@@ -7,32 +7,37 @@
     margin: 0;
     list-style: none;
     text-align: center;
+    color: #fff;
   }
 
   &__item {
     text-align: center;
-    background-color: #5eb5d1;
+    background-color: #81b3d2;
     border-bottom: 1px solid #678fa8;
     border-top: 1px solid #9ac2db;
-    color: #fff;
 
-    &:first-child {
-      border-top: none;
-  }
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #5496bd;
+    }
 
     &:hover {
       background-color: #669ec0;
+    }
+
+    &:first-child {
+      border-top: none;
+    }
   }
-}
 
   &__link {
     text-align: center;
     text-decoration: none;
-    color: #fff;
     text-transform: uppercase;
     font-size: 17px;
     line-height: 54px;
-    &:link {
+
+    &:visited {
       color: #fff;
     }
   }
@@ -48,19 +53,22 @@
       margin: 0;
       list-style: none;
       text-align: center;
+      color: #000;
     }
 
     :nth-child(2) {
       margin-right: 20%;
     }
 
-
     &__item {
       float: left;
       width: 20%;
-      color: #000;
       background-color: white;
       border: none;
+
+      &:hover {
+        background-color: transparent;
+      }
     }
 
     &__link {
@@ -69,15 +77,32 @@
       text-align: center;
       color: #000;
 
-      &:link {
+      &:visited {
         color: #000;
+      }
+
+      &:hover {
+        color: #81b3d2;
+      }
+
+      &:active {
+        color: #b2b2b2;
+      }
+
+      &--activ {
+        color: #9b8d84;
+
+        &:hover {
+          color: #604e43;
+        }
+
+        &:active {
+          color: #d6d0cc;
+        }
       }
     }
   }
 }
-
-
-
 
 @media (min-width: 1200px) {
   .menu {

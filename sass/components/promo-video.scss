@@ -1,5 +1,6 @@
 .promo-video {
   text-align: center;
+  padding-top: 20px;
   padding-bottom: 100px;
 
   &__header {
@@ -15,8 +16,10 @@
   }
 
   &__text {
-    margin: 0 auto;
     width: 80%;
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-bottom: 42px;
     font-family: $ptsans;
     font-size: 14px;
     font-weight: lighter;
@@ -31,7 +34,18 @@
     padding-bottom: 50px;
 
     &__header {
-      padding-bottom: 75px;
+      padding-bottom: 33px;
+    }
+
+    &__title {
+      margin: 0;
+      padding-top: 71px;
+      font-size: 30px;
+    }
+
+    &__text {
+      width: 65%;
+      padding-top: 38px;
     }
   }
 }
@@ -39,10 +53,10 @@
 @media (min-width: 1200px) {
   .promo-video {
     padding: $desktop-padding;
-    padding-bottom: 50px;
+    padding-bottom: 87px;
 
     &__header {
-      padding-bottom: 75px;
+      padding-bottom: 33px;
     }
 
     &__text {

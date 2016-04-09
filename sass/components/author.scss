@@ -1,12 +1,40 @@
 .author {
+  padding-top: 39px;
   font-family: $ptsans;
   font-size: 14px;
   text-transform: uppercase;
+  font-style: normal;
+
+
+  &__link {
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 10px;
+      outline: none;
+
+      &:hover {
+        fill: #81b3d2;
+      }
+
+      &:active {
+        fill: #b2b2b2;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
 
   .author {
     float: right;
+    padding-right: 43px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .author {
+    padding-right: 43px;
   }
 }

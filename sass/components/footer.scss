@@ -1,5 +1,7 @@
 .footer {
   padding: $mobile-padding;
+  padding-top: 40px;
+  padding-bottom: 23px;
   text-align: center;
 
   &__hastag {
@@ -16,15 +18,26 @@
 @media (min-width: 768px) {
   .footer {
     @include clearfix;
+    padding-top: 0;
+    padding-bottom: 36px;
     text-align: center;
 
     &__hastag {
       float: left;
+      padding-top: 41px;
+      padding-left: 10px;
+      font-size: 21px;
     }
   }
 }
 
 @media (min-width: 1200px) {
-  padding: $desktop-padding;
+  .footer {
+      padding: 0;
+      padding-bottom: 36px;
+      &__hastag {
+        padding-left: 134px;
+      }
+  }
 
 }

@@ -2,19 +2,20 @@
   padding: $mobile-padding;
 
   &__header {
+    padding-bottom: 17px;
     text-align: center;
   }
 
   &__title {
-    padding-top: 20px;
+    padding-top: 26px;
     font-size: 18px;
     text-transform: uppercase;
   }
 
   &__text {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    padding-top: 10px;
+    padding-top: 17px;
     font-size: 14px;
     text-transform: uppercase;
     line-height: 24px;
@@ -27,12 +28,40 @@
 
   .recall {
     padding: $tablet-padding;
+    padding-bottom: 60px;
+
+    &__header {
+      padding-bottom: 70px;
+    }
+
+    &__title {
+      margin: 0;
+      padding-top: 70px;
+      font-size: 30px;
+    }
+
+    &__text {
+      width: 69%;
+      padding-top: 22px;
+    }
   }
 }
 
 @media (min-width: 1200px) {
   .recall {
     padding: $desktop-padding;
+
+    &__header {
+      padding-bottom: 70px;
+    }
+
+    &__title {
+      padding-top: 105px;
+    }
+
+    &__text {
+      width: 45%;
+    }
   }
 
 }

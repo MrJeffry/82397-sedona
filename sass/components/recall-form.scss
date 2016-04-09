@@ -1,29 +1,253 @@
 .recall-form {
 
   &__item {
-    padding-top: 20px;
+    padding-top: 22px;
+    border-top: 1px solid #f2f2f2;
+
+    &--name {
+      input {
+        width: 100%;
+        font-size: 18px;
+        font-weight: 700;
+        color: #000000;
+        text-align: left;
+        border: none;
+        background-color: #f2f2f2;
+        height: 58px;
+        line-height: 58px;
+        padding-left: 22px;
+        outline: none;
+
+        &:hover {
+          background-color: #e5e5e5;
+        }
+
+        &:focus {
+          background-color: #fff;
+          outline: 4px solid #e5e5e5;
+        }
+      }
+    }
+
+    &--contacts {
+      position: relative;
+      padding-bottom: 10px;
+
+      &:before {
+        position: absolute;
+        top: 102px;
+        right: -2px;
+        content: '';
+        width: 58px;
+        height: 58px;
+        background-color: #e6e6e6;
+        background-image: url("../img/icon-phone.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &::after {
+        position: absolute;
+        top: 231px;
+        right: -2px;
+        content: '';
+        width: 58px;
+        height: 58px;
+        background-color: #e6e6e6;
+        background-image: url("../img/icon-mail.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 18px;
+        font-weight: 700;
+        color: #000000;
+        text-align: left;
+        border: none;
+        background-color: #f2f2f2;
+        height: 58px;
+        line-height: 58px;
+        padding-left: 22px;
+        outline: none;
+
+        &:hover {
+          background-color: #e5e5e5;
+        }
+
+        &:focus {
+          background-color: #fff;
+          outline: 4px solid #e5e5e5;
+        }
+      }
+
+      label {
+        padding-top: 7px;
+        padding-bottom: 10px;
+      }
+
+      span {
+        color: red;
+        padding-left: 18px;
+        font-size: 14px;
+      }
+    }
+
+    &--impression {
+
+    padding-top: 22px;
+    padding-bottom: 20px;
+
+      .recall-form__wrapper {
+        padding-top: 18px;
+        padding-bottom: 28px;
+      }
+
+      input {
+        display: none;
+
+        &+label {
+          position: relative;
+          display: block;
+          padding-left: 75px;
+          font-size: 17px;
+          font-weight: 700;
+          text-transform: none;
+
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: -14px;
+            left: 0;
+            display: block;
+            width: 23px;
+            height: 23px;
+            border-radius: 50%;
+            border: 15px solid #f2f2f2;
+            background-color: #f2f2f2;
+          }
+
+          &:hover {
+            &:before {
+              border: 15px solid #e5e5e5;
+              background-color: #e5e5e5;
+            }
+          }
+
+          &:active {
+            &:before {
+              border: 15px solid #e5e5e5;
+              background-color: #a4a4a4;
+            }
+          }
+        }
+
+        &:checked {
+          &+label {
+            &:before {
+              background-color: #000;
+            }
+          }
+        }
+      }
+    }
+
+    &--attraction {
+      input {
+        display: none;
+
+        &+label {
+          position: relative;
+          display: block;
+          cursor: pointer;
+          padding-left: 75px;
+          font-size: 17px;
+          font-weight: 700;
+          line-height: 47px;
+          text-transform: none;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: 0;
+            display: block;
+            width: 55px;
+            height: 55px;
+            border-radius: 3px;
+            background-color: #f2f2f2;
+          }
+          &:hover {
+            &:before {
+
+              background-color: #e5e5e5;
+            }
+          }
+
+          &:active {
+            &:before {
+
+              background-color: #d5d5d5;
+            }
+          }
+        }
+
+        &:checked {
+          &+label {
+            &:before {
+              background-image: url("../../img/icon-tick.svg");
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+          }
+        }
+      }
+    }
+
+    &--emotions {
+
+      padding-bottom: 48px;
+      textarea {
+        box-sizing: border-box;
+        width: 100%;
+        height: 150px;
+        padding: 10px 20px;
+        font-weight: 700;
+        border: none;
+        outline: none;
+        background-color: #f2f2f2;
+        resize: none;
+      }
+    }
   }
 
   &__wrapper {
-    padding-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    padding-bottom: 18px;
+
+    &--contacts {
+      flex-wrap: wrap;
+    }
   }
 
   fieldset {
+    padding: 0;
+    box-sizing: border-box;
     width: 100%;
     border: none;
   }
 
   &__title {
-    padding-bottom: 25px;
+    padding-bottom: 22px;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    text-align: left;
   }
 
   &__label {
@@ -31,21 +255,15 @@
     text-transform: uppercase;
     text-align: center;
     text-align: left;
-    margin-right: 10px;
+    margin-right: 17px;
   }
 
   &__input {
-    width: 100%;
-    font-size: 18px;
-    font-weight: 700;
-    color: #000000;
-    text-align: left;
-    border: none;
-    background-color: #f2f2f2;
-    height: 58px;
-    line-height: 58px;
-    padding-left: 22px;
-    outline: none;
+
+  }
+
+  &__note {
+    display: none;
   }
 }
 
@@ -56,13 +274,121 @@
     flex-direction: row;
     flex-wrap: wrap;
 
+    &__item {
+
+      &--impression {
+        box-sizing: border-box;
+        padding-top: 0;
+        border-top: none;
+        border-bottom: none;
+        border-right: 1px solid #dbdbdb;
+
+        .recall-form__title {
+          padding-bottom: 65px;
+          text-align: left;
+        }
+
+        .recall-form__wrapper {
+          padding-bottom: 38px;
+        }
+      }
+
+      &--name {
+        box-sizing: border-box;
+        padding-top: 0;
+        padding-left: 50px;
+        border-top: none;
+
+        .recall-form__title {
+          padding-bottom: 65px;
+          text-align: left;
+        }
+      }
+
+      &--contacts {
+        border: none;
+
+        &:after {
+          top: 230px;
+        }
+
+        &:before {
+          top: 119px;
+        }
+
+        label {
+          padding-left: 20px;
+        }
+
+        .recall-form__error {
+          position: absolute;
+          top: 85px;
+          right: 0;
+        }
+
+        .recall-form__title {
+          position: relative;
+          font-size: 21px;
+          line-height: 40px;
+
+          &:after {
+            content: '';
+            position: absolute;
+            width: 125px;
+            height: 1px;
+            background-color: #dbdbdb;
+            top: 19px;
+            left: -187px;
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            width: 125px;
+            height: 1px;
+            background-color: #dbdbdb;
+            top: 19px;
+            left: 336px;
+          }
+        }
+      }
+
+      &--attraction {
+        border-top: none;
+
+        .recall-form__title {
+          position: relative;
+          width: 64%;
+          margin: 0 auto;
+          font-size: 21px;
+          line-height: 25px;
+
+          &:after {
+            content: '';
+            position: absolute;
+            width: 125px;
+            height: 1px;
+            background-color: #dbdbdb;
+            top: 25px;
+            left: -118px;
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            width: 125px;
+            height: 1px;
+            background-color: #dbdbdb;
+            top: 25px;
+            left: 405px;
+          }
+        }
+      }
+    }
+
     &__wrapper {
       display: flex;
       flex-direction: row;
-    }
-
-    &__label {
-
     }
 
     &__input {
@@ -107,6 +433,55 @@
       &:nth-child(4) {
         width: 100%;
       }
+
+      &--emotions {
+        width: 100%;
+        padding-top: 46px;
+        padding-bottom: 63px;
+        border-top: none;
+
+        .recall-form__title {
+          position: relative;
+          width: 64%;
+          margin: 0 auto;
+          padding-bottom: 60px;
+          font-size: 21px;
+          line-height: 25px;
+
+          &:after {
+            content: '';
+            position: absolute;
+            width: 125px;
+            height: 1px;
+            background-color: #dbdbdb;
+            top: 13px;
+            left: -118px;
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            width: 125px;
+            height: 1px;
+            background-color: #dbdbdb;
+            top: 13px;
+            left: 405px;
+          }
+        }
+
+        textarea {
+          padding: 15px 20px;
+          font-size: 18px;
+        }
+      }
+    }
+    &__note {
+      display: block;
+      width: 163px;
+      float: right;
+      padding-top: 20px;
+      font-size: 14px;
+      text-transform: uppercase;
     }
   }
 }
@@ -121,20 +496,28 @@
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
+
+      &--contacts {
+        width: 50%;
+
+        span {
+          left: 0;
+        }
+      }
     }
 
-    &-attraction {
+    &--attraction {
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
 
-        &__wrapper {
-          width: 25%;
-          &:nth-child(1) { order: 0; }
-          &:nth-child(2) { order: 1; }
-          &:nth-child(4) { order: 2; }
-        }
+      &__wrapper {
+        width: 25%;
+        &:nth-child(1) { order: 0; }
+        &:nth-child(2) { order: 1; }
+        &:nth-child(4) { order: 2; }
       }
+    }
 
     &__input {
 
@@ -159,6 +542,124 @@
 
         &:nth-child(4) {
           width: 100%;
+        }
+      }
+    }
+
+    &__item {
+
+      &--contacts {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &:after {
+          top: 119px;
+          left: 422px;
+        }
+
+        &:before {
+          top: 119px;
+        }
+
+        .recall-form__title {
+          width: 100%;
+          padding-bottom: 57px;
+
+          &:after {
+            content: '';
+            position: absolute;
+            width: 278px;
+            height: 1px;
+            background-color: #dbdbdb;
+            top: 18px;
+            left: 0;
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            width: 278px;
+            height: 1px;
+            background-color: #dbdbdb;
+            top: 18px;
+            left: 680px;
+          }
+        }
+      }
+
+      &--name {
+        box-sizing: border-box;
+        padding-top: 0;
+        padding-left: 77px;
+        border-top: none;
+
+        .recall-form__title {
+          padding-bottom: 65px;
+          font-size: 21px;
+          text-align: left;
+        }
+      }
+
+      &--impression {
+        .recall-form__title {
+          padding-left: 76px;
+          padding-bottom: 57px;
+          font-size: 21px;
+          text-align: left;
+        }
+
+      }
+
+      &--attraction {
+
+        .recall-form__title {
+          width: 40%;
+
+          &:after {
+            content: '';
+            position: absolute;
+            width: 278px;
+            height: 1px;
+            background-color: #dbdbdb;
+            top: 18px;
+            left: -300px;
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            width: 278px;
+            height: 1px;
+            background-color: #dbdbdb;
+            top: 18px;
+            left: 400px;
+          }
+        }
+      }
+
+      &--emotions {
+        .recall-form__title {
+
+          &:after {
+            content: '';
+            position: absolute;
+            width: 278px;
+            height: 1px;
+            background-color: #dbdbdb;
+            top: 18px;
+            left: -190px;
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            width: 278px;
+            height: 1px;
+            background-color: #dbdbdb;
+            top: 18px;
+            left: 520px;
+          }
         }
       }
     }

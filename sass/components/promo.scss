@@ -1,9 +1,10 @@
 .promo {
   position: relative;
+  background-color: #81b3d2;
   background-image: url("../img/bg-back-mobile.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 390px;
+  min-height: 158px;
   text-align: center;
 
   &__text {
@@ -12,6 +13,7 @@
   }
 
   &__image {
+    width: 100px;
     display: block;
     margin: 0 auto;
     padding-top: 60px;
@@ -28,6 +30,12 @@
     width: 320px;
     height: 27px;
   }
+
+  img {
+    padding-top: 52px;
+    width: 229px;
+    height: 39px;
+  }
 }
 
 @media  (min-resolution: 144dpi),
@@ -35,12 +43,13 @@
   .promo {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-position: 50% 25%;
+
   }
 }
 
 @media (min-width: 768px) {
   .promo {
-    min-height: 519px;
+    min-height: 290px;
     background-image: url("../img/bg-back-desktop.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -58,6 +67,12 @@
       padding-top: 77px;
       width: 460px;
     }
+
+    img {
+      padding-top: 93px;
+      width: 458px;
+      height: 78px;
+    }
   }
 
   @media  (min-resolution: 144dpi),
@@ -71,6 +86,12 @@
 
 @media (min-width: 1200px) {
   .promo {
+
+    min-height: 301px;
+
+    img {
+      padding-top: 103px;
+    }
 
     &:after {
       background-image: url(../img/bg-intro-triangle-desktop.svg);
